@@ -17,7 +17,6 @@ public class SpringSecurityBasicAuth {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringSecurityBasicAuth.class, args);
 	}
-	
 	/** On startup, ensure an ADMIN user exists */
 	@Bean
 	CommandLineRunner initAdmin(EmployeeRepository repo, BCryptPasswordEncoder encoder) {
